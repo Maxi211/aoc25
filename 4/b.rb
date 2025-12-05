@@ -12,6 +12,7 @@ loop do
     line.each.with_index do |value, x|
 
       next if value == 0
+
       x_start = x > 0 ? x-1 : x
       x_end = x < line.size ? x+1 : x
       y_start = y > 0 ? y-1 : y
@@ -27,9 +28,3 @@ loop do
 end
 
 puts reachable_count
-
-
-
-
-
-

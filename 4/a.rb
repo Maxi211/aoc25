@@ -14,14 +14,9 @@ area.each.with_index do |line, y|
     y_start = y > 0 ? y-1 : y
     y_end = y < area.size ? y+1 : y
 
-    reachable_count+=1 if area[y_start..y_end].map{_1[x_start..x_end]}.flatten.sum < 5
+    reachable_count += 1 if area[y_start..y_end].map{_1[x_start..x_end]}.flatten.sum < 5
 
   end
 end
+
 puts reachable_count
-
-
-
-
-
-
